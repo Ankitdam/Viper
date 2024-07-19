@@ -1822,7 +1822,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await OpenSettings(query.message)
 
     elif query.data == "triggerUploadMode":
-        await query.answer("Thank You Mrviper)
+        await query.answer("Thank You Mrviper")
         upload_as_doc = await db.get_upload_as_doc(query.from_user.id)
         if upload_as_doc:
             await db.set_upload_as_doc(query.from_user.id, False)
@@ -2345,7 +2345,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return await query.answer('♥️ Thank You MrViper ♥️')
         
         if set_type == 'url_mode' and query.from_user.id not in ADMINS:
-            ruery.answer(text=f"Hey {query.from_user.first_name}, You can't change shortlink settings for your group !\n\nIt's an admin only setting !", show_alert=True)
+            return awaity ruery.answer(text=f"Hey {query.from_user.first_name}, You can't change shortlink settings for your group !\n\nIt's an admin only setting !", show_alert=True)
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
