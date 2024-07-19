@@ -2345,7 +2345,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return await query.answer('♥️ Thank You MrViper ♥️')
         
         if set_type == 'url_mode' and query.from_user.id not in ADMINS:
-            return awaity ruery.answer(text=f"Hey {query.from_user.first_name}, You can't change shortlink settings for your group !\n\nIt's an admin only setting !", show_alert=True)
+            return await query.answer(text=f"Hey {query.from_user.first_name}, You can't change shortlink settings for your group !\n\nIt's an admin only setting !", show_alert=True)
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
