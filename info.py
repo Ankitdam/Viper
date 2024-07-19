@@ -169,11 +169,11 @@ DISCUSSION_CHAT_USRNM = "Discusss_Here" #without @
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/real_MoviesAdda3"
+DOWNLOAD_TEXT_URL = "https://t.me/How_to_download_movieee"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/real_MoviesAdda3"
+CAPTION_BUTTON_URL = "https://t.me/viper_ott_stores"
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
